@@ -7,6 +7,96 @@
    
 }
 
+/* our famous section */
+.sec3
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* background: #161623; */
+    background: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-content
+{
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    margin: 0 267px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #fff;
+   color:#000;
+   width: 50%;
+   height:400px;
+   flex-direction: column;
+   box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.event-content .imgbx
+{
+    width: 300px;
+    height: 300px;
+    /* background: red; */
+   box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    
+    
+}
+.event-content .imgbx img
+{
+   width: 100%;
+   height: 100%;
+   /* object-fit: cover; */
+}
+
+.event-content h2,p
+{
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+
+
+
+
+@media (max-width:1000px)
+{
+    .event-content
+    {   
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width:468px)
+{
+    .event-content
+    {   
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .event-content .imgbx
+    {
+        width: 200px;
+        height: 200px;
+        
+    }
+}
+ 
+
+
+/* our famous section */
+
+
+
 /* our initiave section  start */
 .init-section
 {
@@ -56,6 +146,12 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  transition: 0.5s;
+}
+
+.init-bx .init-imgbx img:hover
+{
+    transform: scale(1.1);
 }
 
 .init-bx .init-heading
@@ -66,6 +162,14 @@
     padding: 10px;
     width: 100%;
 }
+
+.init-bx .init-heading a,
+.init-bx .init-heading a:hover
+{
+    text-decoration: none;
+}
+
+
 
 .init-bx .init-heading h2
 {
@@ -100,7 +204,8 @@
     right: 40px;
     width: 60px;
     height: 60px;
-    background: #fff url(../img/up.png);
+    /* background: #fff url(../img/up.png); */
+    /* background: #fff; */
     border-radius: 50%;
     background-size:40px ;
     background-position: center;
@@ -110,7 +215,9 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 10px 15px #fff,
+                inset 0 -10px -15px #fff;   
+    background: rgba(255,255,255,0.05);
 }
 
 .scrollTop.active
@@ -238,6 +345,8 @@
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(255,255,255,.3);
+
 }
 
 .ak_header2 .content .text
@@ -258,7 +367,8 @@
 
 .aklogo:hover
 {
-    box-shadow:0 0 10px #083152,0 0 40px #2196f3,0 0 80px #2196f3;
+    box-shadow:0 0 10px #083152,0 0 40px #2196f3;
+    
 }
 
 
@@ -466,9 +576,10 @@
     top: 0;
     right: 0;
     width: 10px;
-    background: linear-gradient(to top,#008aff,#00ffe7);
+    /* background: linear-gradient(to top,#008aff,#00ffe7); */
+    background: #fff;
     z-index: 1000000;
-    animation: progress 5s linear infinite;
+    /* animation: progress 5s linear infinite; */
    }
   
    @keyframes progress
@@ -493,7 +604,8 @@
        left: 0;
        width: 100%;
        height: 100%;
-       background: linear-gradient(to top,#008aff,#00ffe7);
+       /* background: linear-gradient(to top,#008aff,#00ffe7); */
+       background: #fff;
        filter: blur(10px);
    }
    
@@ -506,7 +618,8 @@
        left: 0;
        width: 100%;
        height: 100%;
-       background: linear-gradient(to top,#008aff,#00ffe7);
+       /* background: linear-gradient(to top,#008aff,#00ffe7); */
+       background: #fff;
        filter: blur(30px);
    }
 
@@ -593,7 +706,10 @@
 }
 @media screen and (max-width:630px)
 {
-   
+   .sec3
+   {
+       width: 150%;
+   }
     
     .fixed-top
     {

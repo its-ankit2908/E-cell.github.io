@@ -31,6 +31,7 @@ header
     justify-content: space-between;
     align-items:center;
     z-index:10;
+    background: #19093b;
 }
 
 header .logo
@@ -213,7 +214,7 @@ section .sci li a
     border:1px solid #999;
 
 }
-.newsletter .inputbox input[type="submit"]
+/* .newsletter .inputbox input[type="button"]
 {
     padding:10px;
     outline:none;
@@ -224,7 +225,8 @@ section .sci li a
     letter-spacing: 2px;
     cursor: pointer;
     box-sizing: border-box;
-}
+} */
+
 .newsletter .close
 {
     position: absolute;

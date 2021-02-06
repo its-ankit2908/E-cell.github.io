@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Associates</title>
+    <link rel="icon" type="image/png" href="./assets/img/ecell-logo-crop.jpg">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -16,7 +17,59 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <style>
-   
+  @media (max-width:991px)
+  {
+    .Associates .container .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+  .Associates .content {
+     width: 100%; 
+  
+    }  
+    
+  .Associates .content h2 {
+     
+       text-align: center;
+    }
+    .Associates .container .box .imgbx {
+       width: 80%;
+       height: 300px;
+    }
+
+    
+  .Associates .content h2 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 20px;
+    font-family: algerian;
+  }
+  
+  .Associates .content h2 span {
+
+    font-size: 2em;
+    
+  }
+  .asso-media
+  {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+
+  @media (max-width:468px)
+ {
+
+  .Associates .container .box .imgbx {
+    width: 80%;
+    height: 200px;
+ }
+
+}
 
         
     </style>
@@ -24,7 +77,8 @@
 <body>
 
     <!-- scroll bottom to top and  progress Bar   -->
-    <div class="scrollTop" onclick="scrolltoTop();"></div>
+    <div class="scrollTop" onclick="scrolltoTop();"><i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 3em; position: relative; left: 8px; color: #2196f3;"></i></div>
+    
     <div id="progressbar"></div>
     <div id="scrollPath"></div>   
     <!-- scroll bottom to top and  progress Bar   -->
@@ -32,7 +86,7 @@
 
        <!-- ******************navbar start here ****************** -->
 
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark ">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
         <a href="./index.html" class="navbar-brand">
             <img class="aklogo" src="./assets/img/E-Cell_white.png" style="margin-top: -10px; height:50px;" alt="logoimage"><span style="margin:0 20px;">E-CELL</span>
        </a>
@@ -52,6 +106,7 @@
                     data-toggle="dropdown" role="button" id="Initiative" >Initiative</a>
                     
                     <div class="dropdown-menu">
+                        <a class="dropdown-item akdropdownitem" href="./E-summit.html">E-summit'19</a>
                         <a class="dropdown-item akdropdownitem" href="./chai-pai-charca.html">Chai pe charcha</a>
                         <a class="dropdown-item akdropdownitem" href="./entrepreneurs-drop-in.html">Entrepreneurs-drop-in</a>
                         <a class="dropdown-item akdropdownitem" href="./idea-box.html">Idea-Box</a>
@@ -62,21 +117,21 @@
 
                 <li class="nav-item"><a href="#" class="nav-link aknav mr-3 dropdown-toggle" data-toggle="dropdown" role="button" id="Archive"   >Archive</a>
 							<div class="dropdown-menu">
-                    			<a class="dropdown-item akdropdownitem" href="">Past Spaekers</a>
-                    			<a class="dropdown-item akdropdownitem" href="">Winner</a>
-                    			<a class="dropdown-item akdropdownitem" href="">Startup</a>
-                    			<a class="dropdown-item akdropdownitem" href="./media.html">Media coverage</a>
-                    			<a class="dropdown-item akdropdownitem" href="">Gallery</a>
-                    			<a class="dropdown-item akdropdownitem" href="">Certificate</a>
+                    			<a class="dropdown-item akdropdownitem" href="./speakers.html">Past Spaekers</a>
+                            <a class="dropdown-item akdropdownitem" href="./winner.html">Winner</a>
+                            <a class="dropdown-item akdropdownitem" href="./startups.html">Startup</a>
+                            <a class="dropdown-item akdropdownitem" href="./media.html">Media coverage</a>
+                            <a class="dropdown-item akdropdownitem" href="">Gallery</a>
+                            <a class="dropdown-item akdropdownitem" href="">Blog</a>
                     
 				</li>
                 <li class="nav-item"><a href="#" class="nav-link aknav mr-3 dropdown-toggle" data-toggle="dropdown" role="button" id="Archive" >Parteners</a>
 					<div class="dropdown-menu">
-                    			<a class="dropdown-item akdropdownitem" href="">Associates</a>
-                    			<a class="dropdown-item akdropdownitem" href="">Sponsors</a>
+                    			<a class="dropdown-item akdropdownitem" href="./associate.html">Associates</a>
+                            <a class="dropdown-item akdropdownitem" href="./sponsors.html">Sponsors</a>
                     		
 				</li>
-                <li class="nav-item"><a href="#" class="nav-link aknav mr-3" >Teams</a></li>
+                <li class="nav-item"><a href="./Team.html" class="nav-link aknav mr-3" >Teams</a></li>
                 <li class="nav-item"><a href="#akcontact" class="nav-link aknav mr-3" >Contact</a></li>  
             </ul>
 
@@ -108,10 +163,10 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repudiandae adipisci nulla minus facilis at ex 
                    architecto omnis voluptatibus iusto.</p>
 
-                <div class="aksocial-media"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                <div class="asso-media"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                  <a class="mx-2" href="https://www.facebook.com/wadhwanifoundation"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a class="mx-2" href="https://www.instagram.com/wadhwanifoundation/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a class="mx-2" href="https://www.linkedin.com/company/wadhwanifoundation"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
                 </div>
 
             </div>
@@ -131,10 +186,10 @@
                     participants about "How to find tools that align with your needs."<br>It helped students to identify 
                     and keep an eye on some cutting-edge technologies which might reinvent the future for them.
                 </p>
-                   <div class="aksocial-media"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                   <div class="asso-media"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <a class="mx-2" href="https://www.facebook.com/groups/headstarters/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="mx-2" href="https://www.instagram.com/headstart_indore?igshid=1f80i2t6fgvgu"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="mx-2" href="https://www.linkedin.com/groups?gid=39715"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
                   </div>
   
             </div>
@@ -148,10 +203,10 @@
                     unique and attract the early adopters.<br>It also aimed at guiding participants about how to 
                     successfully implement their innovative ideas.
                 </p>
-                   <div class="aksocial-media" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                   <div class="asso-media" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <a class="mx-2" href="https://www.facebook.com/engineerbabuofficial/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="mx-2" href="https://www.instagram.com/explore/tags/engineerbabu/top/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="mx-2" href="https://in.linkedin.com/company/engineerbabu"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
                   </div>
   
             </div>
@@ -171,10 +226,10 @@
                     which focused on the principles of how to convert your innovative ideas into successfully
                     business models.The workshop gave the attendees the confidence to build a roadmap to their 
                     success.</p>
-                   <div class="aksocial-media" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                   <div class="asso-media" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <a class="mx-2" href="https://www.facebook.com/eshipSimplified/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="mx-2" href="https://www.instagram.com/eshipsimplified/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="mx-2" href="https://in.linkedin.com/public-profile/in/himanshu-goyal-591208a0?challengeId=AQHTXcqn4aY7gAAAAXceV8rflQi-hgdEJd1IhXNtxoswHDP79KFHyObAaqpLZ6p1gd58FmA2kcukkBXv-jeIbXdChTJUoPTo1w&submissionId=a414a40c-bfda-5b16-34d9-1a7599812f48"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
                   </div>
   
             </div>
@@ -189,10 +244,10 @@
                     how one has to adopt this change to dominate the digital era.<br>Many tips and tricks
                     to hack the figital world were also ahared in the workshop. 
                 </p>
-                   <div class="aksocial-media" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                   <div class="asso-media" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <a class="mx-2" href="https://www.facebook.com/OurDigitalGurukul"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="mx-2" href="https://www.instagram.com/digital_gurukul"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="mx-2" href="https://www.linkedin.com/company/digital-gurukul"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
                   </div>
   
             </div>
@@ -216,13 +271,13 @@
         <div class="akfooter-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             <div class="akleft-col">
                 <img src="./assets/img/E-Cell_white.png" alt="logoimage" class="aklogo" >
-                <div class="aksocial-media">
-                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-map" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <div class="asso-media">
+                  <a href="https://www.facebook.com/ecell.medicaps/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/ecell.medicaps/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://g.page/medi-caps-university-indore?share"><i class="fa fa-map" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="https://in.linkedin.com/company/ecell-medi-caps"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.twitter.com/initium_ecell"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </div>
                 <p class="akright-text" style="color:white;">© All Rights Reserved. Designed by E-Cell, Medi-Caps</p>
             </div>
