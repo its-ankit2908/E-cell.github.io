@@ -1,0 +1,465 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <link rel="stylesheet" href="./assets/css/ankit.css">
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/stylish_nav.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins,sans-serif';
+    box-sizing: border-box;
+
+}
+
+.navbar
+{
+    opacity: 0;
+    background:rgba(0,0,0,0.2) !important;
+    padding: 40px 0;
+    transition: 0.5s;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 3s;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.akbanner
+{
+    position: relative;
+    background: url("assets/img/bg5.jpg");
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+    background-position: center;
+    
+
+}
+.akbanner .clouds
+{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+
+}
+.akbanner .clouds img
+{
+   position: absolute;
+   bottom:0;
+   max-width:100%;
+   animation:cloud calc(8s * var(--i)) linear infinite;
+  
+}
+@keyframes cloud
+{
+   0%
+   {
+       transform: translateX(-100%);
+   }
+   100%
+   {
+       transform: translateX(100%);
+   }
+}
+section
+{
+    position: relative;
+}
+
+
+.sec1,
+.sec2
+{   
+    position: relative;
+    padding: 100px;
+    background: #161623;
+    
+}
+.sec2::before
+{
+    content: '';
+    top:0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right 70%);
+
+}
+
+
+.sec2::after
+{
+    content: '';
+    top:0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 10%);
+    
+}
+
+section h2
+{
+    font-size:2.5em;
+    margin-bottom:20px;
+    font-family: cursive;
+    
+
+}
+section p
+{
+    font-family: cursive;
+}
+
+.card-section
+{
+   margin:0;
+   padding:0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   flex-direction: column;
+}
+.card-section .card-container
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+}
+
+.card-section .card-container .box
+{
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.card-section .card-container .box::before
+{
+   content: '';
+   width: 50%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: rgba(255,255,255,0.2);
+   z-index: 2;
+   pointer-events: none;
+}
+
+.card-section .card-container .box .icon 
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color:#fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius:50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+.card-section .card-container .box:nth-child(1) .icon
+{
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+ 
+.card-section .card-container .box:nth-child(1):hover .icon
+{
+    box-shadow: 0 0 0 400px #e91e63;
+}
+
+
+
+.card-section .card-container .box:nth-child(2) .icon
+{
+    box-shadow: 0 0 0 0 #23e629;
+    background: #23e629;
+}
+ 
+.card-section .card-container .box:nth-child(2):hover .icon
+{
+    box-shadow: 0 0 0 400px #23e629;
+}
+
+
+.card-section .card-container .box:nth-child(3) .icon
+{
+    box-shadow: 0 0 0 0 #2196f3;
+    background: #2196f3;
+}
+ 
+.card-section .card-container .box:nth-child(3):hover .icon
+{
+    box-shadow: 0 0 0 400px #2196f3;
+}
+
+.card-section .card-container .box .content
+{
+    position: relative;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+
+
+.card-section .card-container .box:hover .content
+{
+    color:#fff;
+}
+
+.card-section .card-container .box .content h3
+{
+    font-size: 25px;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: 500;
+
+}
+
+.card-section .card-container .box .content p
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+@media (max-width:1000px)
+{
+    .card-section .card-container
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   z-index: 100;
+}
+    .akbanner
+    {
+    width: 150%;
+    }
+}
+
+
+
+
+   </style>
+</head>
+
+<body>
+    <div class="scrollTop" onclick="scrolltoTop();"></div>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>   
+    
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+        <a href="./index.html" class="navbar-brand">
+            <img class="aklogo" src="./assets/img/E-Cell_white.png" style="margin-top: -10px; height:50px;" alt="logoimage"><span style="margin:0 20px;">E-CELL</span>
+       </a>
+
+           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#akmymenu">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+
+          <div class="collapse navbar-collapse" id="akmymenu">
+            
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 " >
+                <li class="nav-item"><a  href="./index.html" class="nav-link aknav mr-3" >Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link aknav mr-3" >About us</a></li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link aknav mr-3 dropdown-toggle" 
+                    data-toggle="dropdown" role="button" id="Initiative" >Initiative</a>
+                    
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item akdropdownitem" href="./chai-pai-charca.html">Chai pe charcha</a>
+                        <a class="dropdown-item akdropdownitem" href="./entrepreneurs-drop-in.html">Entrepreneurs-drop-in</a>
+                        <a class="dropdown-item akdropdownitem" href="./idea-box.html">Idea-Box</a>
+                        <a class="dropdown-item akdropdownitem" href="./one-dollarventure.html">One-Dollar-Venture</a>
+                        <a class="dropdown-item akdropdownitem" href="./what-my-story.html">What-my-story</a>
+                    </div>
+                </li>
+
+                <li class="nav-item"><a href="#" class="nav-link aknav mr-3 dropdown-toggle" data-toggle="dropdown" role="button" id="Archive"   >Archive</a>
+							<div class="dropdown-menu">
+                    			<a class="dropdown-item akdropdownitem" href="">Past Spaekers</a>
+                    			<a class="dropdown-item akdropdownitem" href="">Winner</a>
+                    			<a class="dropdown-item akdropdownitem" href="">Startup</a>
+                    			<a class="dropdown-item akdropdownitem" href="./media.html">Media coverage</a>
+                    			<a class="dropdown-item akdropdownitem" href="">Gallery</a>
+                    			<a class="dropdown-item akdropdownitem" href="">Certificate</a>
+                    
+				</li>
+                <li class="nav-item"><a href="#" class="nav-link aknav mr-3 dropdown-toggle" data-toggle="dropdown" role="button" id="Archive" >Parteners</a>
+					<div class="dropdown-menu">
+                    			<a class="dropdown-item akdropdownitem" href="">Associates</a>
+                    			<a class="dropdown-item akdropdownitem" href="">Sponsors</a>
+                    		
+				</li>
+                <li class="nav-item"><a href="#" class="nav-link aknav mr-3" >Teams</a></li>
+                <li class="nav-item"><a href="#akcontact" class="nav-link aknav mr-3" >Contact</a></li>  
+            </ul>
+
+          </div>
+          <div class ="atharv"><a style="text-decoration: none;" class="border border-primary" href="./commingSoon.html" role="button">
+           <span></span>
+           <span></span>   
+           <span></span>
+           <span></span>
+           Coming Soon
+         </a></div>
+       </nav>
+ 
+    <div class="akbanner" data-aos="zoom-in">
+       <div class="clouds">
+            <img src="./assets/img/cloud1.png" alt="" style="--i:1;">
+            <img src="./assets/img/cloud2.png" alt="" style="--i:2;">
+            <img src="./assets/img/cloud3.png" alt="" style="--i:3;">
+            <img src="./assets/img/cloud4.png" alt="" style="--i:4;">
+            <img src="./assets/img/cloud5.png" alt="" style="--i:5;">
+       </div>
+    </div>
+    <section class="sec1">
+        <h2 class="text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">About Us</h2>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="text-white">E-cell was first established under the Centre of Enterpreneurship Development in the year 2008 & then it gained reputation as an individual
+            club in the year 2018.Our vision is to develop,enhance and carve out the inner enterpreneurial potentials of students
+        by providing them with opportunites.<br><br>E-cell's mission is to train students to face industrial challenges.We also help students discover
+         their potential,implement their ideas,innovate and grow and learn everyday to gain the skills which are going to help them a lifetime. </p>
+        </section>
+
+    <section class="sec2 card-section">
+        
+        <div class="card-container">
+            <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="0" class="box">
+                <div class="icon">01</div>
+                  <div class="content">
+                        <h3 >Ideate</h3>
+                        <p >
+                          Ideas are just raw materials but they are own most valuable assets.We motivate
+                           students to share their Ideas
+                          and enjoy their "Idea to reality" journey with E-cell.
+                         </p>
+                  </div>
+            </div>
+            
+
+            <div class="box" data-aos="flp-left" data-aos-duration="1000" data-aos-delay="500">
+                <div class="icon">02</div>
+                <div class="content">
+                    <h3>Initiate</h3>
+                    <p>
+                        When ideas are implemented properly,they can be wonderful examples.Students can implement their ideas and receive
+                        reviews from experienced leaders & alumnus who are a part of the E-cell network.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
+                <div class="icon">03</div>
+                <div class="content">
+                    <h3 >Innovate</h3>
+                    <p>Based on the reviews,the students can test out their ideas and come up with various
+                        innovative solutions thar will help them create an upward trajectory of their idea.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p class ="text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">You can keep your ideas alive  with E-cell's assets and their selfless assistance.</p>
+    </section>
+
+    <section>
+        <footer class="akfooterlast" style="background: radial-gradient(circle,#000,#0c3e68);">
+            <div class="akfooter-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                <div class="akleft-col">
+                    <img src="./assets/img/E-Cell_white.png" alt="logoimage" class="aklogo" >
+                    <div class="aksocial-media">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-map" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                    <p class="akright-text" style="color:white; font-family: sans-serif;">© All Rights Reserved. Designed by E-Cell, Medi-Caps</p>
+                </div>
+                <div class="akright-col">
+                    <h2 style="font-family: sans-serif;">THE ENTREPRENEURSHIP CELL</h2>
+                    <div class="akborder"></div>
+                    <h2 style="font-family: sans-serif;">Medicaps University</h2>
+                </div>
+            </div>
+        </footer>
+    </section>  
+
+</body>
+<script src="./assets/js/jquery.js"></script>     
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script type="text/javascript">
+    window.addEventListener('scroll',function(){
+          const navbar = document.querySelector('.navbar');
+          const atharv = document.querySelector('.atharv')
+          navbar.classList.toggle('sticky',window.scrollY >0);
+          atharv.classList.toggle('sticky',window.scrollY >0);
+    });
+
+    let progress = document.getElementById("progressbar");
+     let totalHeight = document.body.scrollHeight - window.innerHeight;
+     window.onscroll = function(){
+         let progressHeight = (window.pageYOffset/totalHeight) * 100;
+         progress.style.height = progressHeight + "%";
+     }
+
+     window.addEventListener('scroll',function(){
+          var scroll = document.querySelector('.scrollTop');
+          scroll.classList.toggle("active",window.scrollY >500);
+     });
+
+     function scrolltoTop(){
+         window.scrollTo({
+             top: 0
+         })
+     }
+</script>
+</html>

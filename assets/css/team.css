@@ -1,0 +1,133 @@
+.team-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #010615;
+    padding-top: 150px;
+    flex-direction: column;
+}
+
+.team-heading
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.team-heading h2
+{
+    font-size: 3em;
+    color: #fff;
+    font-family: joker;
+    font-weight: 700;
+}
+
+.team-section .team-container
+{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.team-container .team-box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: 40px;
+}
+
+.team-container .team-box .team-imgbx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+  /* padding: 20px; */
+}
+
+.team-container .team-box:hover .team-imgbx
+{
+   transform: translate(-35px,-35px);
+   
+}
+
+.team-container .team-box .team-imgbx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit:cover; */
+
+}
+
+
+
+.team-container .team-box .team-content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.team-container .team-box:hover .team-content
+{
+   transform: translate(35px,35px);
+
+}
+
+.team-container .team-box .team-content h2 
+{
+    font-size: 20px;
+    color: #111;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.team-container .team-box .team-content h2 span
+{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+@media (max-width:768px)
+{
+    .team-container
+    {
+        flex-direction: column;
+    }
+    .team-container .team-box:hover .team-content
+    {
+        transform: translate(0,35px);
+
+    }
+    .team-container .team-box:hover .team-imgbx
+    {
+        transform: translate(0,-35px);
+   
+    }
+}

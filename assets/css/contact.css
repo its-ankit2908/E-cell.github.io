@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family-poppins:wght@200;300;400;500;600;00;800;900;&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.akcontact
+{
+    position: relative;
+    min-height: 100vh;
+    padding:50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background: url(../img/contact.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.akcontact .akcontent
+{
+    max-width: 800px;
+    text-align:center;
+}
+
+.akcontact .akcontent h2
+{
+   font-size:36px;
+   font-weight:500;
+   color:#fff;
+}
+
+.akcontact .akcontent p
+{
+   font-weight:300;
+   color:#fff;
+}
+
+.akcontainer 
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+}  
+
+.akcontainer .akcontactinfo
+{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+}
+
+.akcontainer .akcontactinfo .akbox
+{
+    position: relative;
+    padding:20px 0;
+    display: flex;
+}
+
+.akcontainer .akcontactinfo .akbox .akicon
+{
+    min-width:60px;
+    height:60px;
+    background:#fff;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    font-size:22px;
+}
+
+.akcontainer .akcontactinfo .akbox .aktext
+{
+    display:flex;
+    margin-left:20px;
+    font-size:16px;
+    color:#fff;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+iframe
+{
+    width: 300px;
+}
+.akcontainer .akcontactinfo .akbox .aktext h3
+{
+    font-weight: 500;
+    color:#00bcd4;
+}
+
+.akcontactform
+{
+    width:40%;
+    padding:40px;
+    background:#fff;
+}
+
+.akcontactform h2
+{
+    font-size:30px;
+    color:#333;
+    font-weight: 500;
+}
+
+.akcontactform .akinputbox
+{
+    position: relative;
+    width:100%;
+    margin-top:10px;
+}
+
+.akcontactform .akinputbox input,
+.akcontactform .akinputbox textarea
+{
+   width:100%;
+   padding:5px 0;
+   font-size:16px;
+   margin:10px 0;
+   border:none;
+   border-bottom:2px solid #333;
+   outline:none; 
+   resize: none;
+}
+
+.akcontactform .akinputbox span
+{
+    position: absolute;
+    left:0;
+    padding:5px 0;
+    font-size:16px;
+    margin:10px 0;
+    pointer-events: none;
+    transition:0.5s;
+    color:#666;
+}
+.akcontactform .akinputbox input:focus ~ span,
+.akcontactform .akinputbox input:valid ~ span,
+.akcontactform .akinputbox textarea:focus ~ span,
+.akcontactform .akinputbox textarea:valid ~ span
+{
+   color:#e91e63;
+   font-size:12px;
+   transform:translateY(-20px);
+}
+
+.akcontactform .akinputbox  input[type="submit"]
+{
+    width:100px;
+    background: #00bcd4;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+    padding:10px;
+    font-size:18px;
+}
+
+@media (max-width: 991px)
+{    
+    iframe
+    {
+        width:200px;
+    }
+    .akfooter
+    {
+        margin-top:-50px;
+    }
+    .akcontact
+    {
+       padding: 50px;
+
+    }
+    .akcontainer
+    {
+      flex-direction: column;
+    }
+    .akcontainer .akcontactinfo
+    {
+        margin-bottom:40px;
+    }
+    .akcontainer .akcontactinfo,
+    .akcontactform
+    {
+        width:100%;
+    }
+}
+
+/*----------------------------------headerlast--------------*/
+.aklogo
+{
+    width:180px;
+}
+.akfooterlast
+{
+    background: radial-gradient(circle,grey,#0c3e68);
+    padding:60px 0;
+   
+
+}
+.akfooter-container
+{
+    max-width:1300px;
+    margin:auto;
+    padding:0 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.aksocial-media
+{
+    margin:20px 0;
+}
+.aksocial-media a{
+    color:#fff;
+    margin-right:25px;
+    font-size:22px;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.aksocial-media a:hover
+{
+    color:#e91e63;
+}
+
+.akright-col h2
+{
+    font-size: 26px;
+    letter-spacing:2px;
+    color:white;
+}
+
+.akborder
+{
+   width:100px;
+   height:4px;
+   background:#e91e63;
+   border-radius: 4px;
+}
+
+@media screen and (max-width:991px)
+{
+    .akfooter-container
+    {
+        width:600px;
+    }
+
+    .akright-col
+    {
+        width:100%;
+        margin-bottom:60px;
+    }
+
+    .akleft-col
+    {
+        width:100%;
+        
+    }
+    
+}
+
+@media screen and (max-width:500px)
+{
+   .akfooterlast
+   {
+       font-size:12px;
+   }
+   .akright-col h2
+   {
+       font-size: 18px;
+   }
+}
+@media screen and (max-width:370px)
+{
+   .akfooterlast
+   {
+       font-size:10px;
+   }
+   .akright-col h2
+   {
+       font-size: 12px;
+   }
+}

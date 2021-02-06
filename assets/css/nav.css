@@ -1,0 +1,179 @@
+
+.navbar
+{
+    background:#000 !important;
+
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+}
+
+
+
+.aknav
+{
+  position: relative;
+  
+  margin:0;
+  background: #000;
+  color:#fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+
+
+.aknav:hover
+{
+   background:#ff3c7f;
+
+}
+
+.aknav:nth-child(2):hover
+{
+   background:#ff3c7f;
+   
+}
+
+.aknav::before
+{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(90deg,transparent,#fff,transparent);
+    transition:0.5s;
+}
+
+.aknav:hover::before
+{
+    left:100%;
+}
+    
+.atharv a
+{
+    position:absolute;
+    right:20px;
+    top:5px;
+    margin:5px 10px;
+    width:200px;
+    height: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    color:#2196f3;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    overflow:hidden;
+    transition:0.2s;
+}
+
+
+
+.akatharv a
+{
+    position:absolute;
+    left:40%;
+    top:0;
+    width:200px;
+    height: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    color:#2196f3;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    overflow:hidden;
+    transition:0.2s;
+}
+
+.atharv a:hover,
+.akatharv a:hover
+{
+    color:black;
+    background: #2196f3;
+    box-shadow:0 0 10px #083152,0 0 40px #2196f3,0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.atharv a span,
+.akatharv a span
+{
+    position: absolute;
+    display:block;
+}
+.atharv a span:nth-child(1),
+.akatharv a span:nth-child(1)
+{
+    top:0;
+    left:-100%;
+    width:100%;
+    height:2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+
+.atharv a:hover span:nth-child(1),
+.akatharv a:hover span:nth-child(1)
+{
+    left:100%;
+    transition:1s;
+}
+
+.atharv a span:nth-child(3),
+.akatharv a span:nth-child(3)
+{
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+
+.atharv a:hover span:nth-child(3),
+.aktharv a:hover span:nth-child(3)
+{
+    right:100%;
+    transition:1s;
+    transition-delay: 0.5s;
+}
+
+.atharv a span:nth-child(2),
+.akatharv a span:nth-child(2)
+{
+    top:-100%;
+    right:0%;
+    width:2px;
+    height:100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+
+.atharv a:hover span:nth-child(2),
+.akatharv a:hover span:nth-child(2)
+{
+    top:100%;
+    transition:1s;
+    transition-delay:0.25s;
+}
+
+.atharv a span:nth-child(4),
+.akatharv a span:nth-child(4)
+{
+    bottom:-100%;
+    left: 0%;
+    width:2px;
+    height:100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+.atharv a:hover span:nth-child(4),
+.akatharv a:hover span:nth-child(4)
+{
+    bottom:100%;
+    transition:1s;
+    transition-delay: 0.75;
+    
+}
