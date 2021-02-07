@@ -1,7 +1,7 @@
 .navbar
 {  
     opacity: 0;
-    background:transparent !important;
+    background:rgba(0,0,0,0.5) !important;
     padding: 40px 0;
     transition: 0.5s;
     animation: fadeIn 1s linear forwards;

@@ -6,14 +6,16 @@
     transition-delay: 0.2s;
 } */
 
-.event-content {
+
+
+.events-content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.event-content p {
+.events-content p {
   font-size: 1.1em;
   position: relative;
   left: 0;
@@ -28,9 +30,31 @@
 
 /* chai pai charcha */
 
-.event-content h1 {
-  text-align: left;
-  width: 100%;
+.events-content h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #fff;
+  text-align: lesft;
+}
+
+.events-content h1::before
+{
+  position: absolute;
+  content: attr(data-text);
+  top:80px;
+  transform-origin:bottom ;
+  transform: rotateX(180deg);
+  background: linear-gradient(0deg,#fff 0, transparent 80%);
+  -webkit-background-clip: text;
+  font-weight: 700;
+  line-height: 0.865em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: transparent;
+  opacity: 0.3;
 }
 
 .evimg {
@@ -60,7 +84,7 @@
   box-shadow: 0 0 10px #2196f3, 0 0 20px #fff;
 }
 
-.evcontentbx {
+.evscontentbx {
   background: #161623;
   color: #fff;
 }
@@ -591,6 +615,10 @@ svg {
 }
 @media screen and (max-width: 786px) {
   
+  .evscontentbx
+  {
+    width: 150%;
+  }
   .mediasection
   {
     width: 150%;
@@ -609,7 +637,7 @@ svg {
   }
   .evchaiimg {
     position: relative;
-    top: -5px;
+    top: -4px;
     width: 600px;
   }
 
